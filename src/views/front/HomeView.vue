@@ -68,7 +68,7 @@ onMounted(() => {
     // overflow-y: scroll;
 
   #bg_1 {
-    background-image: url('../../../../image/tavern_5.jpg');
+    background-image: url('./image/tavern_5.jpg');
     margin-top: -5vw;
     width: 105vw;
     height: 130vh;
