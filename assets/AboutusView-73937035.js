@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vueexport-helper-c27b6911.js";import{f as s,l as o,F as _,m as e}from"./runtime-core.esm-bundler-4adb0545.js";const n={},c=e("div",{class:"bg"},null,-1),a=e("h1",null," 7777777 ",-1);function r(l,u){return s(),o(_,null,[c,a],64)}const f=t(n,[["render",r]]);export{f as default};

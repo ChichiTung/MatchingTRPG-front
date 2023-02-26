@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{f as r,l as c}from"./runtime-core.esm-bundler-4adb0545.js";const o={};function t(n,s){return r(),c("h1",null," TRPG ? ")}const f=e(o,[["render",t]]);export{f as default};

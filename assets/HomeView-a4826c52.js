@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vueexport-helper-c27b6911.js";import{f as o,l as t}from"./runtime-core.esm-bundler-4adb0545.js";const c={},r={class:"note"};function s(n,_){return o(),t("div",r)}const i=e(c,[["render",s]]);export{i as default};
