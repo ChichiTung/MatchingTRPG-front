@@ -182,7 +182,7 @@
 
 </template>
 
-<script setup>
+<script setup></script>
 import { apiAuth } from '@/plugins/axios'
 import { ref, reactive } from 'vue'
 // import { useRoute, useRouter } from 'vue-router'
@@ -303,16 +303,16 @@ const updateDisabled = (idx) => {
     form.intro = myInfo.intro
 
     console.log('{form.image}')
-    originalImg.value.push(
-      ...form.image.map((image, idx) => {
-        return {
-          idx: idx.toString(),
-          name: idx.toString(),
-          status: 'finished',
-          url: image
-        }
-      })
-    )
+    // originalImg.value.push(
+    //   ...form.image.map((image, idx) => {
+    //     return {
+    //       idx: idx.toString(),
+    //       name: idx.toString(),
+    //       status: 'finished',
+    //       url: image
+    //     }
+    //   })
+    // )
 
     // if (myInfo.image !== null) {
 
