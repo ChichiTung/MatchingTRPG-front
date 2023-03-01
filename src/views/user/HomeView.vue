@@ -182,7 +182,7 @@
 
 </template>
 
-<script setup></script>
+<script setup>
 import { apiAuth } from '@/plugins/axios'
 import { ref, reactive } from 'vue'
 // import { useRoute, useRouter } from 'vue-router'
