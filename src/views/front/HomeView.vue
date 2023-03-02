@@ -15,10 +15,10 @@
 
       <img id="boss" src="../../assets/matching_半身-01.png">
       <div id="matching_intro">
-        <p style="font-size: 1.5rem; margin-left: 2%;">
+        <p style="font-size: 1.2rem; margin-left: 2%;">
           【酒館老闆 - 邁邁】</p>
 
-        <p id="matching_intro_text">
+        <p id="matching_intro_text" style="font-size: 1.2rem;">
           ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.
           Iä! Iä! Hastur! Ugh! Ugh! Iä Hastur cf’ ayak ’vulgtmm, vugtlagln vulgtmm! Ai! Shub-Niggurath! ...
         </p>
@@ -28,7 +28,7 @@
     <div id="bg_3">
       <img id="you" src="../../assets/matching_半身-01.png">
       <div class="matching_answer">
-        <p style="font-size: 1.5rem; margin-left: 28%;">
+        <p style="font-size: 1.2rem; margin-left: 28%;">
           【你】
         </p>
         <router-link
@@ -397,10 +397,10 @@ onMounted(() => {
     .matching_answer{
       position: relative;
       width: 65%;
-      height: 30%;
+      height: 45%;
       top: 20%;
       left: 15%;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #2F4F40;
       font-weight: 600;
       background: #fbefbdcb;
@@ -408,7 +408,7 @@ onMounted(() => {
       border-radius: 15px;
       box-shadow: 0.3rem 0.3rem 0.7rem #181818;
       p {
-        line-height: 1.5rem;
+        line-height: 1.3rem;
       }
 
       .answer{
