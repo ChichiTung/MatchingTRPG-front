@@ -547,7 +547,7 @@ onMounted(() => {
     }
     .light_title{
         position: absolute;
-        top: 19%;
+        top: 21%;
         right: 37%;
         rotate: -3deg;
         color: #2F4F40;
