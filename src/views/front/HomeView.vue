@@ -504,7 +504,7 @@ onMounted(() => {
     border-right: solid 10px #2a7535;
     width: 62%;
     height: 20%;
-    top: 42%;
+    top: 43%;
     // background: #000;
     bottom: 0;
     left:0;
