@@ -197,7 +197,7 @@ onUnmounted(() => {
           text-decoration: none;
           font-weight: 400;
           color: #2F4F4099;
-          font-size:16px;
+          font-size:20px;
 
           text-overflow: ellipsis;
           // white-space: nowrap;

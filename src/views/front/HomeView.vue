@@ -319,7 +319,7 @@ onMounted(() => {
     // filter: drop-shadow(0 0 0.3rem rgb(255, 248, 205));
 
     position: absolute;
-    top:47%;
+    top:45%;
     right: 7%;
     width: 25%;
     animation:jello-horizontal .9s both;
@@ -340,7 +340,7 @@ onMounted(() => {
     color: #fff4c7;
     position: absolute;
     top:92%;
-    right: -22%;
+    right: -18%;
     width: 50%;
     text-shadow: 0.2rem 0.2rem 0.2rem #2F4F40;
     animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both 0.5s;
