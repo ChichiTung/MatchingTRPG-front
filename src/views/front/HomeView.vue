@@ -542,7 +542,7 @@ onMounted(() => {
 
     #light_title {
       position: absolute;
-      top:12%;
+      top:15%;
       left:45%;
     }
     .light_title{
