@@ -198,7 +198,7 @@ function ButtonClickR (e) {
           left: 20%;
           color: rgb(45, 81, 37);
           font-weight: 800;
-          font-size: 20px;
+          font-size: 2;
         }
 
         }

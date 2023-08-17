@@ -1,11 +1,17 @@
 <template>
   <!-- <h1> 官網~~~ </h1> -->
   <div class="container-fluid">
-    <div id="bg_1">
+    <div id="bg_big">
+      <img src="../../assets/tavern_4.jpg" alt="小酒館背景" :style="{ height: windowHeight + 'px'}" class="bg_big_img">
+      <div class="bg_big_img_filter"></div>
     </div>
-    <img id="matching" src="../../assets/TRPG_LOGO_word.png">
-    <img id="TRPG" src="../../assets/TRPG_LOGO_word2.png">
-    <h2 id="slogan">(( Match Your Team ! ))</h2>
+
+    <div id="title_box">
+
+      <img class="matching" src="../../assets/TRPG_LOGO_word2-01.png">
+      <img class="TRPG" src="../../assets/TRPG_LOGO_word2.png">
+      <h2 class="slogan">(( Match Your Team ! ))</h2>
+    </div>
 
     <div id="position"></div>
 
@@ -276,6 +282,10 @@ onMounted(() => {
   }
 })()
 
+// document.clientHeight 獲取body元素的高度， 比 window.innerHeight 的高度來的大， 感覺用全屏背景的話， 前者比較適用
+const windowHeight = document.clientHeight
+console.log('windowHeight：' + windowHeight) // 輸出使用者當前的工作區高度
+
 </script>
 
 <style lang="scss">
@@ -287,65 +297,105 @@ onMounted(() => {
 
     // overflow-y: scroll;
 
-  #bg_1 {
-    background-image: url('../../assets/tavern_4.jpg');
-    margin-top: -5vw;
-    width: 105vw;
-    height: 130vh;
-    // max-height: 150vh;
-    flex-shrink: 0;
-    background-repeat: no-repeat;
-    background-size: 105%;
-    background-position: -10vw -15vh;
-    // position: relative;
+  #bg_big {
+    // background-image: url('../../assets/tavern_4.jpg');
+    // margin-top: -5vw;
+    width: 150%;
+    height: 120%;
     position: fixed;
 
-    // background-attachment: fixed;
+    .bg_big_img {
+      height: 105%;
+      min-width: 102%;
+      position: absolute;
+      left: -2%;
+      z-index: 1;
 
-    &::before {
-      content: '';
+      @media (max-width:992px) {
+        left: -20%;
+      }
+      @media (max-width:576px) {
+        left:-45%;
+      }
+
+    }
+    .bg_big_img_filter {
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
+      background: #2F4F40;
+      opacity: 0.5;
+      z-index: 1;
+    }
+  }
+  #title_box {
 
-      background-color: #2F4F4F99;
+    width: 35%;
+    height: 26%;
+    // background: #000;
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 56%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    @media (max-width:768px) {
+    width: 40%;
+    height: 27%;
+    top: 75%;
+    left: 51%;
     }
 
-  }
-  #matching {
+    @media (max-width:576px){
+    width: 70%;
+    height: 30%;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    }
+
+     .matching {
     // filter: drop-shadow(0 0 0.3rem rgb(255, 248, 205));
 
-    position: absolute;
-    top:45%;
-    right: 7%;
-    width: 25%;
+    width: 80%;
     animation:jello-horizontal .9s both;
    @keyframes jello-horizontal{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
+
+   @media (max-width:576px) {
+    width: 100%;
+   }
   }
-  #TRPG {
+  .TRPG {
     // filter: drop-shadow(0 0 0.3rem rgb(205, 255, 212));
-    position: absolute;
-    top:75%;
-    right: 8%;
-    width: 22%;
+    width: 75%;
      animation:jello-diagonal-1 .8s both;
      @keyframes jello-diagonal-1{0%{transform:skew(0deg 0deg)}30%{transform:skew(-25deg -25deg)}40%{transform:skew(15deg,15deg)}50%{transform:skew(-15deg,-15deg)}65%{transform:skew(5deg,5deg)}75%{transform:skew(-5deg,-5deg)}100%{transform:skew(0deg 0deg)}}
-    // width: 110%;
+
+      @media (max-width:576px) {
+    width: 100%;
+   }
   }
-  #slogan{
-    font-size: 2rem;
+  .slogan{
+    font-size: 1.7rem;
     color: #fff4c7;
-    position: absolute;
-    top:92%;
-    right: -18%;
-    width: 50%;
+    // width: 50%;
     text-shadow: 0.2rem 0.2rem 0.2rem #2F4F40;
     animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both 0.5s;
     @keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+    @media (max-width:768px) {
+      font-size: 1.2rem;
+    }
   }
+
+  }
+
   #position {
     position: absolute;
     top:75%;
