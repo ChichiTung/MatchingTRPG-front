@@ -1,0 +1,1 @@
+import{_ as s,o as t,i as _,F as n,d as e}from"./index-fcbc0ebc.js";const o={},c=e("div",{class:"bg"},null,-1),a=e("h1",null," 7777777 ",-1);function l(r,u){return t(),_(n,null,[c,a],64)}const d=s(o,[["render",l]]);export{d as default};
