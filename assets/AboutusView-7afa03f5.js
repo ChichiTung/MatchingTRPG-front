@@ -1,0 +1,1 @@
+import{_ as s,o as t,j as _,F as n,d as e}from"./index-dd25a306.js";const o={},c=e("div",{class:"bg"},null,-1),a=e("h1",null," 7777777 ",-1);function l(r,u){return t(),_(n,null,[c,a],64)}const i=s(o,[["render",l]]);export{i as default};
